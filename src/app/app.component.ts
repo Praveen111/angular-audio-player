@@ -9,7 +9,7 @@ import { Component, Input, ViewChild,ElementRef, ChangeDetectorRef  } from '@ang
 })
 export class AppComponent {
   // need to mention the track from source folder in src
-  @Input() public src: string = '../assets/Humdard.mp3';
+  @Input() public src: string = '/assets/Humdard.mp3';
   @Input() public autoplay: boolean = false;
   @Input() public showStateLabel: boolean = false;
   public audioStateLabel = 'Audio sample';
