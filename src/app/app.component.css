@@ -1,0 +1,89 @@
+.outside {
+    width: 50%;
+    float: right;
+    height: 35vh;
+    background: #262626;
+    position: relative;
+}
+
+.audio-player {
+    background: #464646;
+    height: 20vh;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress {
+    width: 90%;
+    margin: 0 auto;
+    background: #dadada3d;
+    height: 30px;
+    border: 1px solid #dadada;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.progress > input {
+    width: 44vw;
+    padding: 5px;
+    /* margin: 0 auto; */
+    accent-color: #F55050;  
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.icon-align-middle {
+    background-color: transparent;
+    border: transparent;
+    color: white;
+}
+
+.icon-align-middle > i {
+    font-size: xx-large;
+}
+
+.controls {
+    padding-top: 10px;
+}
+
+.flip {
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.float-right {
+    float: right;
+    display: flex;
+}
+
+.float-right > input {
+    position: relative;
+    top: 0.75vh;
+}
+
+.timeline {
+    position: absolute;
+    bottom: 3vh;
+    color: white;
+    width: 90%;
+    left: 2.5vw;
+    display: flex;
+    align-items: center;
+}
+
+.volume {
+    position: relative;
+    top: 5px;
+}
+
+.speed {
+    width: 85%;
+    text-align: center;
+}
