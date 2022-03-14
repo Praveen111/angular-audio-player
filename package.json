@@ -1,5 +1,5 @@
 {
-  "name": "angular-audio-player",
+  "name": "audio-player",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
