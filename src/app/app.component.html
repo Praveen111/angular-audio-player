@@ -11,8 +11,8 @@
   <!-- <label for="volume">Volume</label> -->
   <div class="controls">
     <!--  show play,pause,reset, volume control -->
-    <button (click)="audio.paused ? play() : pause()" class="icon-align-middle" [title]="audio.paused ? 'Play' : 'Pause'">
-        <i class="material-icons">{{audio.paused ? 'play_circle_outline' : 'pause_circle_outline'}}</i> 
+    <button (click)="audio?.paused ? play() : pause()" class="icon-align-middle" [title]="audio?.paused ? 'Play' : 'Pause'">
+        <i class="material-icons">{{audio?.paused ? 'play_circle_outline' : 'pause_circle_outline'}}</i> 
     </button>
     <!-- restart_alt, fast_forward -->
     <button (click)="reset()" class="icon-align-middle" title="Restart">
@@ -20,11 +20,11 @@
   
   </button>
   
-<button (click)="forwardOrBackward('back')" class="icon-align-middle flip" [disabled]="audio.paused" title="Rewind">
+<button (click)="forwardOrBackward('back')" class="icon-align-middle flip" [disabled]="audio?.paused" title="Rewind">
   <i class="material-icons">fast_forward</i>
 
 </button>
-  <button (click)="forwardOrBackward('forward')" class="icon-align-middle" [disabled]="audio.paused" title="Forward">
+  <button (click)="forwardOrBackward('forward')" class="icon-align-middle" [disabled]="audio?.paused" title="Forward">
     <i class="material-icons">fast_forward</i>
 
 </button>
@@ -36,12 +36,12 @@
   
 </button>
 
-<button (click)="moreOrLessSpeed('more')" class="icon-align-middle float-right" [disabled]="audio.paused" title="Faster">
+<button (click)="moreOrLessSpeed('more')" class="icon-align-middle float-right" [disabled]="audio?.paused" title="Faster">
   <i class="material-icons">double_arrow</i>
 
 </button>
 
-<button (click)="moreOrLessSpeed('less')" class="icon-align-middle float-right flip" [disabled]="audio.paused" title="Slower">
+<button (click)="moreOrLessSpeed('less')" class="icon-align-middle float-right flip" [disabled]="audio?.paused" title="Slower">
   <i class="material-icons">double_arrow</i>
 
 </button>
@@ -59,7 +59,7 @@
 <!-- show timings here -->
 <div> <span #startTimeRef>{{startTime}}</span> / {{endTime}}</div>
 <span class="speed">Speed : {{audio?.playbackRate}}x</span>
-<div>{{audio.paused ? 'Paused' : 'Playing'}}</div>
+<div>{{audio?.paused ? 'Paused' : 'Playing'}}</div>
   </div>
 
 </div>

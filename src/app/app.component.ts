@@ -1,4 +1,4 @@
-import { Component, Input, ViewChild,ElementRef } from '@angular/core';
+import { Component, Input, ViewChild,ElementRef, ChangeDetectorRef  } from '@angular/core';
 // import fasterImg from '../assets/faster.svg';
 // import slowerImg from '../assets/slower.svg';
 
@@ -32,7 +32,7 @@ export class AppComponent {
   maxTime="";
   private timeInterval:any;
 
-  public constructor() { }
+  public constructor(private cdr:ChangeDetectorRef) { }
 
   public pause(): void {
     if (this.audio) {
@@ -98,6 +98,7 @@ export class AppComponent {
     this.audio = this._audioRef.nativeElement;
     this.rangeEle = this.rangeElement.nativeElement;
     this.startEle = this.startTimeValue.nativeElement;
+    this.cdr.detectChanges();
     // this.volumeEle = this._volumeRef.nativeElement;
     // console.log("Value",this._volumeRef)
   }
