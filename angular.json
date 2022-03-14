@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "audio-player:build:production"
+              "browserTarget": "angular-audio-player:build:production"
             },
             "development": {
-              "browserTarget": "audio-player:build:development"
+              "browserTarget": "angular-audio-player:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "audio-player:build"
+            "browserTarget": "angular-audio-player:build"
           }
         },
         "test": {
@@ -105,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "audio-player"
+  "defaultProject": "angular-audio-player"
 }
